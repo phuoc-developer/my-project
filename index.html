@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>thegioidientu.com</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/933921ea07.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="header-top-bar">
+            <div class="banner-media">
+                <img src="imges/hinhanh1.png.png" alt="">
+            </div> 
+        </div>
+        <div class="header">
+            <div class="header_top">
+                <div>
+                    <a href="" class="header_logo"><img src="imges/Logo-tgdd-desk-265x56.png"></a>
+                    <a href="" class="header_address" onclick="openLocation">xem giá, tồn kho tại:
+                        <span data-provice="3" data-ditrict="0" data-wadr="0">Hồ Chí Minh<i class="fa-solid fa-sort-down"></i></span></a>
+                    <form action="" onsubmit="return suggestsearch(event);" class="header_search">
+                        <input type="text" class="input_search" onkeyup="suggestsearch(event);" placeholder="bạn tìm gì ..." name="key" autocomplete="off" maxlength="100">
+                        <button type="submit">
+                            <div class="icon-search">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>  
+                        </button>
+                        <div id="search-resul"></div>
+                    </form>
+                    <a href="" class="header_order">Tài khoản & <br>Đơn hàng</a>
+                    <div class="header_user">
+                        <ul>
+                            <li>
+                                <a href="registrer.html">Đăng ký</a>
+                            </li>
+                            <li>
+                                <a href="login.html">Đăng nhập</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="http:/giohang.com" class="header_cart menu-info">
+                        <div class="box-cart">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span class="cart-number"></span>
+                        </div>
+                        <span>Giỏ hàng</span>
+                    </a>
+                    <div class="header_listop">
+                        <div class="divitem">
+                            <a herf="http:/24hcongnghe.com">24h <br>Công nghệ</a>
+                        </div>
+                        <div class="bordercol"></div>
+                        <div class="divitem">
+                            <a herf="">Hỏi đáp</a>
+                        </div>
+                        <div class="bordercol"></div>
+                        <div class="divitem">
+                            <a herf="">Game App</a>
+                        </div>
+                    </div>    
+                </div>
+            </div>           
+        </div>  
+        <div class="header_main">
+            <div>
+                <div class="menu_main">
+                    <ul>
+                        <li class><a href=""><i><img src="imges/icon-phone-96x96-2.webp"></i><span>Điện thoại</span></a></li>
+                        <li class><a href=""><i><img src="imges/icon-laptop-96x96-1.webp"></i><span>Laptop</span></a></li>
+                        <li class><a href=""><i><img src="imges/icon-tablet-96x96-1.webp"></i><span>Tablet</span></a></li>
+                        <li class="has-list"><a href=""><img src="imges/icon-phu-kien-96x96-1.webp"></i><span>Phụ kiện</span><i style="margin-left: 4px;" class="fa-solid fa-sort-down"></i></a>
+                            <div class="navmwg">
+                                <ul>
+                                    <li><a href=""><strong>Phụ kiện di động</strong></a></li>
+                                    <hr>
+                                    <li><a href=""><h3>Sạc dự phòng</h3></a></li>
+                                    <li><a href=""><h3>Sạc, cáp chuyển đổi</h3></a></li>
+                                    <li><a href=""><h3>ôp lưng điện thoại</h3></a></li>
+                                    <li><a href=""><h3>ốp lưng máy tính bảng</h3></a></li>
+                                    <li><a href=""><h3>Miếng dán</h3></a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class><a href=""><i><img src="imges/icon-smartwatch-96x96-1.webp"></i><span>SmartWatch</span></a></li>
+                        <li class><a href=""><i><img src="imges/watch-icon-96x96.webp"></i><span>Đồng hồ</span></a></li>
+                        <li class><a href=""><i><img src="imges/icon-header-may-cu-30x30.webp"></i><span>Máy cũ, thu cũ</span></a></li>
+                        <li class><a href=""><i><img src="imges/icon-pc-96x96.webp"></i><span>PC, máy in</span></a></li>
+                        <li class><a href=""><span>Sim, Thẻ cào</span></a></li>
+                        <li class><a href=""><span>Dịch vụ tiện ích</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+         <div class="bg_banner">
+            <img src="imges/Banner-big--2--1920x450.png">
+        </div> 
+        <section class="slider">
+            <div class="content">
+                <div class="slider-content">
+                    <div id="slider-content-left-top" >
+                        <a hreft=""><img id="hinh" src="imges/slider1.png"></a>
+                        <i class="fa-solid fa-circle-chevron-left" onclick="prev()"></i>
+                        <i class="fa-solid fa-circle-chevron-right" onclick="next()"></i>
+                    </div>
+                </div>
+                <h2>Danh muc san pham</h2>
+            </div>
+        </section>
+       
+           
+      
+        
+
+
+
+        
+
+        
+       
+        <script src="script.js" ></script>
+    </body>
+</html>
